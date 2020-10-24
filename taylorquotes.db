@@ -38,7 +38,89 @@
         "quote":"I'm only seventeen / I don't know anything but I know I miss you",
         "song":"betty",
         "album": "folklore"
+    },
+    {
+        "quote":"You play stupid games, you win stupid prizes",
+        "song":"Miss Americana and the Heartbreak Prince",
+        "album": "folklore"
+    },
+    {
+        "quote":"I had a marvelous time ruining everything",
+        "song":"The Last Great American Dynasty",
+        "album": "folklore"
+    },
+    {
+        "quote":"Untouchable, burning brighter than the sun / And when you’re close I feel like coming undone",
+        "song":"Untouchable",
+        "album": "fearless"
+    },
+    {
+        "quote":"Barefoot in the kitchen / Sacred new beginnings / That became my religion, listen",
+        "song":"Cornelia Street",
+        "album": "lover"
+    },
+    {
+        "quote":"I could build a castle out of all the bricks they threw at me",
+        "song":"New Romantics",
+        "album": "1989"
+    },
+    {
+        "quote":"Cold was the steel of my axe to grind for the boys who broke my heart / Now I send their babies presents",
+        "song":"Invisible String",
+        "album": "folklore"
+    },
+    {
+        "quote":"He says he's so in love / He's finally got it right / I wonder if he knows he's all I think about at night",
+        "song":"Teardrops on My Guitar",
+        "album": "taylor swift"
+    },
+    {
+        "quote":"Back when you fit in my poems like a perfect rhyme",
+        "song":"Holy Ground",
+        "album": "Red"
+    },
+    {
+        "quote":"I once believed love would be burning red / But it's golden",
+        "song":"Daylight",
+        "album": "Lover"
+    },
+    {
+        "quote":"I think I've seen this film before / And I didn't like the ending / You're not my homeland anymore / So what am I defending now?",
+        "song":"Exile",
+        "album": "folklore"
+    },
+    {
+        "quote":"He said the way my blue eyes shined / Put those Georgia stars to shame that night / I said, 'That's a lie'",
+        "song":"Tim McGraw",
+        "album": "Taylor Swift"
+    },
+    {
+        "quote":"The monsters turned out to be just trees / When the sun came up you were looking at me",
+        "song":"Out of the Woods",
+        "album": "1989"
+    },
+    {
+        "quote":"The night you danced like you knew our lives would never be the same / You held your head like a hero / On a history book page / It was the end of a decade / But the start of an age",
+        "song":"Long Live",
+        "album": "Speak Now"
+    },
+    {
+        "quote":"I can't decide if it's a choice: Getting swept away",
+        "song":"Treacherous",
+        "album": "Red"
+    },
+    {
+        "quote":"They told me all of my cages were mental / So I got wasted like all my potential",
+        "song":"This is Me Trying",
+        "album": "Folklore"
+    },
+    {
+        "quote":"But she wears short skirts / I wear T-shirts / She's cheer captain / And I'm on the bleachers",
+        "song":"You Belong With Me",
+        "album": "Fearless"
     }
+
+
     
     
 ]
