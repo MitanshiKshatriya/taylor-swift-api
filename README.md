@@ -4,6 +4,9 @@ I couldn't believe that one of the best lyricsit doesn't have a random api gener
 
 ![](taylor.gif)
 
+## Usage
+* To Get Random Taylor Swift lyrics : Send Get Request to : https://protected-plains-05402.herokuapp.com/
+
 ## Contribution
 
 * Contribute your favourite taylor lyrics / quotes
