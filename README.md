@@ -1,6 +1,6 @@
 # Taylor Swift Api
 
-I couldn't believe that one of the best songwriters doesn't have a random lyrics generator api so I made one.
+Here's an API to get Taylor Swift lyrics.
 
 ![](taylor.gif)
 
