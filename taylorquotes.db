@@ -5,6 +5,301 @@
         "album": "taylor Swift"
     },
     {
+        "quote":"When you think Tim McGraw, I hope you think of me.",
+        "song":"Tim McGraw",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"“So watch me strike a match on all my wasted time.",
+        "song":"Picture to Burn",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"I'll be strong, I'll be wrong, oh but life goes on…",
+        "song":"A Place in This World",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"And when you take, you take the very best of me.",
+        "song":"Cold As You",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"But no one notices until it's too late to do anything.",
+        "song":"The Outside",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"Our song is the slamming screen door, sneakin' out late, tapping on your window.",
+        "song":"Our Song",
+        "album":"taylor swift"
+    },
+    {
+        "quote":"And I don't know why, but with you I'd dance in a storm in my best dress, fearless.",
+        "song":"Fearless",
+        "album":"Fearless"
+    },
+    {
+        "quote":"But in your life, you'll do things greater than dating the boy on the football team…But I didn't know it at fifteen.",
+        "song":"Fifteen",
+        "album":"Fearless"
+    },
+    {
+        "quote":"I've found time can heal most anything and you just might find who you're supposed to be.",
+        "song":"Fifteen",
+        "album":"fearless"
+    },
+    {
+        "quote":"Romeo, save me. They're trying to tell me how to feel. This love is difficult but it's real.",
+        "song":"Love Story",
+        "album":"fearless"
+    },
+    {
+        "quote":"Why are people always leaving? I think you and I should stay the same.",
+        "song":"Hey Stephen",
+        "album":"fearless"
+    },
+    {
+        "quote":"My mistake, I didn't know to be in love you had to fight to have the upper hand.",
+        "song":" White Horse",
+        "album":"fearless"
+    },
+    {
+        "quote":"This is a big world, that was a small town there in my rear view mirror disappearing now",
+        "song":"White Horse",
+        "album":"fearless"
+    },
+    {
+        "quote":"You've got a smile that could light up this whole town.",
+        "song":"You Belong With Me",
+        "album":"fearless"
+    },
+    {
+        "quote":"And we know it's never simple, never easy. Never a clean break, no one here to save me.",
+        "song":"Breathe",
+        "album":"fearless"
+    },
+    {
+        "quote":"You took a swing, I took it hard. And down here from the ground I see who you are.",
+        "song":"Tell Me Why",
+        "album":"fearless"
+    },
+    {
+        "quote":"All this time I was wasting, hoping you would come around… I've been giving out chances every time and all you do is let me down.",
+        "song":"You’re Not Sorry",
+        "album":"fearless"
+    },
+    {
+        "quote":"And then you feel so low you can't feel nothing at all.",
+        "song":"Forever and Always",
+        "album":"fearless"
+    },
+    {
+        "quote":"It rains when you're here and it rains when you're gone.",
+        "song":"Forever and Always",
+        "album":"Fearless"
+    },
+    {
+        "quote":"These walls that they put up to hold us back will fall down…",
+        "song":"Change",
+        "album":"fearless"
+    },
+    {
+        "quote":"My mind forgets to remind me you're a bad idea.",
+        "song":"Sparks fly",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"It turns out freedom ain't nothing but missing you.",
+        "song":"Back to December",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"She floats down the aisle like a pageant queen, but I know you wish it was me… don’t you?",
+        "song":"Speak Now",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"I lived in your chess game, but you changed the rules every day.",
+        "song":"Dear John",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"I’m shining like fireworks over your sad, empty town.",
+        "song":"Dear John",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"Someday I'll be living in a big, old city and all you're ever gonna be is mean.",
+        "song":"Mean",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"I'd tell you I miss you, but I don't know how, I've never heard silence quite this loud.",
+        "song":"The Story of Us",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"This is looking like a contest of who can act like they care less. But I liked it better when you were on my side.",
+        "song":"The Story of Us",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"And don't lose the way that you dance around in your pj's getting ready for school.",
+        "song":"Never Grow Up",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"This night is sparkling, don't you let it go.  I'm wonderstruck, blushing all the way home.",
+        "song":"Enchanted",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"2AM, who do you love?",
+        "song":"Enchanted",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"Your string of lights is still bright to me… Who you are is not where you've been.",
+        "song":"Innocent",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"Today is never too late to be brand new.",
+        "song":"Innocent",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"You and I walk a fragile line; I have known it all this time. But I never thought I'd live to see it break.",
+        "song":"Haunted",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"I don't know how to be something you miss.",
+        "song":"Last Kiss",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"Bring on all the pretenders. One day, we will be remembered.",
+        "song":"Long Live",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"So don't you worry your pretty, little mind, people throw rocks at things that shine.",
+        "song":"Ours",
+        "album":"Speak Now"
+    },
+    {
+        "quote":"We are alone with our changing minds. We fall in love 'til it hurts or bleeds or fades in time.",
+        "song":"State of Grace",
+        "album":"Red"
+    },
+    {
+        "quote":"Love is a ruthless game unless you play it good and right.",
+        "song":"State of Grace",
+        "album":"Red"
+    },
+    {
+        "quote":"He's long gone when he's next to me and I realize the blame is on me.",
+        "song":"I Knew You Were Trouble",
+        "album":"Red"
+    },
+    {
+        "quote":"No apologies. He'll never see you cry. Pretends he doesn't know that he's the reason why.",
+        "song":" I Knew You Were Trouble",
+        "album":"Red"
+    },
+    {
+        "quote":"The saddest fear comes creeping in - that you never loved me or her, or anyone, or anything...",
+        "song":"I Knew You Were Trouble",
+        "album":"Red"
+    },
+    {
+        "quote":"…That magic's not here no more. And I might be OK, but I'm not fine at all.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"And your mother's telling stories about you on a tee ball team. You taught me 'bout your past, thinking your future was me.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"I forget about you long enough to forget why I needed to...",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"Maybe we got lost in translation, maybe I asked for too much. But maybe this thing was a masterpiece 'til you tore it all up. Running scared, I was there, I remember it all too well.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"You call me up again just to break me like a promise, so casually cruel in the name of being honest.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"Time won't fly, it's like I'm paralyzed by it. I'd like to be my old self again, but I'm still trying to find it.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"Cause there we are again, when I loved you so. Back before you lost the one, real thing you've ever known.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"We're happy, free, confused, and lonely at the same time. It's miserable and magical.",
+        "song":"22",
+        "album":"Red"
+    },
+    {
+        "quote":"I wish I could run to you. And I hope you know that every time I don't I almost do.",
+        "song":"I Almost Do",
+        "album":"Red"
+    },
+    {
+        "quote":"You wear your best apology, but I was there to watch you leave.",
+        "song":"The Last Time",
+        "album":"Red"
+    },
+    {
+        "quote":"But sometimes I wonder how you think about it now.",
+        "song":"Holy Ground",
+        "album":"Red"
+    },
+    {
+        "quote":"But I don’t wanna dance if I’m not dancing with you.",
+        "song":"Holy Ground",
+        "album":"Red"
+    },
+    {
+        "quote":"Words, how little they mean when you're a little too late.",
+        "song":"Sad Beautiful Tragic",
+        "album":"Red"
+    },
+    {
+        "quote":"“And they tell you that you’re lucky, but you’re so confused, 'cause you don’t feel pretty, you just feel used.",
+        "song":"The Lucky One",
+        "album":"Red"
+    },
+    {
+        "quote":"I've been spending the last eight months thinking all love ever does is break and burn and end…",
+        "song":"Begin Again",
+        "album":"Red"
+    },
+    {
+        "quote":"And what do you do when the one who means the most to you is the one who didn't show?",
+        "song":"The Moment I Knew",
+        "album":"Red"
+    },
+    {
+        "quote":"Loving him is like driving a new Maserati down a dead-end street / Faster than the wind, passionate as sin, ending so suddenly",
+        "song":"Red",
+        "album":"Red"
+    },
+    {
         "quote":"When all you wanted / Was to be wanted / Wish you could go back / And tell yourself what you know now",
         "song":"fifteen",
         "album": "fearless"
