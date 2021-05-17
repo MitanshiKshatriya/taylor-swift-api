@@ -1,161 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+		<title>TAYLOR SWIFT API</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <title>TAYLOR SWIFT API</title>
+		<style>
+			@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+			@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+			body {
+				font-weight: 600;
+			}
+			.container {
+				margin: auto 15%;
+			}
 
-    <style>
-        @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
-        @import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
-        body{
-            font-weight: 600;
-        }
-        .container {
-            margin: auto 15%;
-        }
-        
-        .content {
-            max-width: 650px;
-            color: #242424;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-        }
+			.content {
+				max-width: 650px;
+				color: #242424;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+					"Helvetica Neue", sans-serif;
+			}
 
-        h1,
-        h2,
-        h3 {
-            font-weight: 600;
-            padding-bottom: .3em;
-            border-bottom: 1px solid #eaecef;
-        }
-        li {
-            padding-bottom: .5em;
-            font-weight: 600;
-        }
-        li>span{
-            text-decoration: underline;
-            color:black;
-            font-weight: 600;
-            /* color: rgb(67, 124, 230); */
-        }
-        a {
-            text-decoration: underline;
-            /* color: rgb(67, 124, 230); */
-            font-style: italic;
-            color:black;
-        }
-        .capitalize{
-            text-transform: capitalize;
-            /* text-align: center; */
-        }
-        #lyrics{
-            /* text-align: center; */
-        }
-        #fetch{
-            color:black;
-            font-weight: bold;
-            font-size: larger;
-            /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-            /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-            font-family:'Pacifico', cursive;
-            font-style: italic;
-        }
-        #quotes{
-            font-size: xx-large;
-        }
-        button{ 
-            border:none; 
-            background: #fff;
-            cursor: pointer;
-        } 
-        button>i,#tweet-quote{
-            color:red;
-        }
-    </style>
-</head>
+			h1,
+			h2,
+			h3 {
+				font-weight: 600;
+				padding-bottom: 0.3em;
+				border-bottom: 1px solid #eaecef;
+			}
+			li {
+				padding-bottom: 0.5em;
+				font-weight: 600;
+			}
+			li > span {
+				text-decoration: underline;
+				color: black;
+				font-weight: 600;
+				/* color: rgb(67, 124, 230); */
+			}
+			a {
+				text-decoration: underline;
+				/* color: rgb(67, 124, 230); */
+				font-style: italic;
+				color: black;
+			}
+			.capitalize {
+				text-transform: capitalize;
+				/* text-align: center; */
+			}
+			#lyrics {
+				/* text-align: center; */
+			}
+			#fetch {
+				color: black;
+				font-weight: bold;
+				font-size: larger;
+				/* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+				/* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+				font-family: "Pacifico", cursive;
+				font-style: italic;
+			}
+			#quotes {
+				font-size: xx-large;
+			}
+			button {
+				border: none;
+				background: #fff;
+				cursor: pointer;
+			}
+			button > i,
+			#tweet-quote {
+				color: red;
+			}
+		</style>
+	</head>
 
-<body>
-    <div class="container">
-        <div class="content">
-            <h1>
-                <img src="https://i.imgur.com/nVjpIKO.jpg" 
-                height="60px">
-                TAYLOR SWIFT API
-            </h1>
-            <p>Open Source API for Taylor Swift lyrics</p>
-            <h2>API End-Points</h2>
-            <ul>
-                <li> GET RANDOM LYRICS: <a href="https://taylorswiftapi.herokuapp.com/get" target="_blank" rel="noopener"
-                        rel="noreferrer">https://taylorswiftapi.herokuapp.com/get</a></li>
-                <li> GET RANDOM LYRICS FROM AN ALBUM: <span><i>In development</i></span></li>
-                
-            </ul>
-            
-            <h2>Random Taylor Quote 
-                <button class="btn" id="new-quote"><i class="fa fa-refresh"></i></button>
-                <button class="btn"><a id="tweet-quote"><i class="fa fa-twitter"></i></a></button>
+	<body>
+		<div class="container">
+			<div class="content">
+				<h1>
+					<img src="https://i.imgur.com/nVjpIKO.jpg" height="60px" />
+					TAYLOR SWIFT API
+				</h1>
+				<p>Open Source API for Taylor Swift lyrics</p>
+				<h2>API End-Points</h2>
+				<ul>
+					<li>
+						GET RANDOM LYRICS:
+						<a
+							href="https://taylorswiftapi.herokuapp.com/get"
+							target="_blank"
+							rel="noopener"
+							rel="noreferrer"
+							>https://taylorswiftapi.herokuapp.com/get</a
+						>
+					</li>
+					QUERY PARAMETERS:
+					<ul>
+						<li>
+							GET RANDOM LYRICS FROM AN ALBUM:
+							<a
+								href="https://taylorswiftapi.herokuapp.com/get?album=evermore"
+								>https://taylorswiftapi.herokuapp.com/get?album=&lt;album&gt;</a
+							>
+						</li>
+						<li>
+							GET RANDOM LYRICS FROM A SONG:
+							<a
+								href="https://taylorswiftapi.herokuapp.com/get?song=lover"
+								>https://taylorswiftapi.herokuapp.com/get?song=&lt;song&gt;</a
+							>
+						</li>
+					</ul>
 
-            </h2>
-            <div id="fetch">
-            <span id="quotes">"</span>    <div id="lyrics">I don't know what I want, so don't ask me / 'Cause I'm still trying to figure it out</div> <span id="quotes">"</span> 
-                <p><span class="capitalize" id="song">- a place in this world, </span><span class="capitalize" id="album">Taylor Swift</span></p>
-            </div>
-            
-            <p>*Contribute lyrics/features at <a href="https://github.com/MitanshiKshatriya/taylor-swift-api">GitHub</a> </p>
-        </div>
-        
-    </div>
-<script>
-function getQuotesJson(){
-  $.ajax({
-    method:'GET',
-    url:"https://taylorswiftapi.herokuapp.com/get",
-    dataType:'json',
-    success: onSuccess,
-    error: onError
-  })
+					<li>
+						GET ALL LYRICS MATCHING THE FILTERS:
+						<ul>
+							<li>
+								FILTER BY SONG: <a
+									href="https://taylorswiftapi.herokuapp.com/get-all?song=lover"
+									>https://taylorswiftapi.herokuapp.com/get?song=&lt;song&gt;</a
+								>
+							</li>
+							<li>
+								FILTER BY ALBUM: <a
+									href="https://taylorswiftapi.herokuapp.com/get-all?album=reputation"
+									>https://taylorswiftapi.herokuapp.com/get?album=&lt;album&gt;</a
+								>
+							</li>
+						</ul>
+					</li>
+				</ul>
 
-  }
+				<h2>
+					Random Taylor Quote
+					<button class="btn" id="new-quote">
+						<i class="fa fa-refresh"></i>
+					</button>
+					<button class="btn">
+						<a id="tweet-quote"><i class="fa fa-twitter"></i></a>
+					</button>
+				</h2>
+				<div id="fetch">
+					<span id="quotes">"</span>
+					<div id="lyrics">
+						I don't know what I want, so don't ask me / 'Cause I'm
+						still trying to figure it out
+					</div>
+					<span id="quotes">"</span>
+					<p>
+						<span class="capitalize" id="song"
+							>- a place in this world, </span
+						><span class="capitalize" id="album">Taylor Swift</span>
+					</p>
+				</div>
 
+				<p>
+					*Contribute lyrics/features at
+					<a
+						href="https://github.com/MitanshiKshatriya/taylor-swift-api"
+						>GitHub</a
+					>
+				</p>
+			</div>
+		</div>
+		<script>
+			function getQuotesJson() {
+				$.ajax({
+					method: "GET",
+					url: "https://taylorswiftapi.herokuapp.com/get",
+					dataType: "json",
+					success: onSuccess,
+					error: onError,
+				});
+			}
 
-function onSuccess(jsonReturn){
-  console.log("success")
-  quoteData=jsonReturn
+			function onSuccess(jsonReturn) {
+				console.log("success");
+				quoteData = jsonReturn;
 
-// {"quote":"Cold was the steel of my axe to grind for the boys who broke my heart /
-//  Now I send their babies presents",
-//  "song":"Invisible String",
-//  "album":"folklore"}
+				// {"quote":"Cold was the steel of my axe to grind for the boys who broke my heart /
+				//  Now I send their babies presents",
+				//  "song":"Invisible String",
+				//  "album":"folklore"}
 
+				var newquote = quoteData.quote;
+				var song = quoteData.song;
+				var album = quoteData.album;
+				$("#lyrics").html(newquote);
+				$("#song").html("- " + song + ", ");
+				$("#album").html(album);
 
-  var newquote=quoteData.quote;
-  var song=quoteData.song;
-  var album=quoteData.album;
-  $("#lyrics").html(newquote);
-  $("#song").html("- "+song+", "); 
-  $("#album").html(album)
-  
-  
-  $("#tweet-quote").attr("href", "http://www.twitter.com/intent/tweet?text="+newquote+" -"+song+", "+album);
+				$("#tweet-quote").attr(
+					"href",
+					"http://www.twitter.com/intent/tweet?text=" +
+						newquote +
+						" -" +
+						song +
+						", " +
+						album
+				);
+			}
+			function onError(jsonReturn) {
+				console.log("error");
+			}
+			$("#new-quote").on("click", function () {
+				getQuotesJson();
+			});
 
-
-}
-function onError(jsonReturn){
-  console.log("error")
-}
-$('#new-quote').on('click',function(){
-  getQuotesJson();
-});
-
-  
-$('document').ready(function(){
-
-    getQuotesJson()
-    
-})
-</script>
-</body>
-
+			$("document").ready(function () {
+				getQuotesJson();
+			});
+		</script>
+	</body>
 </html>
