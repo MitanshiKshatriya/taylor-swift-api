@@ -250,6 +250,16 @@
         "album":"Red"
     },
     {
+        "quote":"Now you mail back my things and I walk home alone / But you keep my old scarf from that very first week, 'cause it reminds you of innocence and it smells like me.",
+        "song":"All Too Well",
+        "album":"Red"
+    },
+    {
+        "quote":"Stay, and I'll be loving you for quite some time / No one else is gonna love me when I get mad",
+        "song":"Stay stay stay",
+        "album":"Red"
+    },
+    {
         "quote":"We're happy, free, confused, and lonely at the same time. It's miserable and magical.",
         "song":"22",
         "album":"Red"
@@ -291,6 +301,16 @@
     },
     {
         "quote":"And what do you do when the one who means the most to you is the one who didn't show?",
+        "song":"The Moment I Knew",
+        "album":"Red"
+    },
+    {
+        "quote":"Your close friends always seem to know / When there's something really wrong",
+        "song":"The Moment I Knew",
+        "album":"Red"
+    },
+    {
+        "quote":"You called me later / And said, \"I'm sorry I didn't make it\" / And I said, \"I'm sorry, too\"",
         "song":"The Moment I Knew",
         "album":"Red"
     },
@@ -370,6 +390,11 @@
         "album":"1989"
     },
     {
+        "quote":"Makes you wanna run and hide, but it made us turn right back around.",
+        "song":"I Wish You Would",
+        "album":"1989"
+    },
+    {
         "quote":"Band-aids don't fix bullet holes. You say sorry just for show.",
         "song":"Bad Blood",
         "album":"1989"
@@ -386,6 +411,11 @@
     },
     {
         "quote":"This love left a permanent mark.",
+        "song":"This Love",
+        "album":"1989"
+    },
+    {
+        "quote":"Your kiss, my cheek / I watch you leave / Your smile, my ghost / I fall to my knees",
         "song":"This Love",
         "album":"1989"
     },
@@ -420,13 +450,13 @@
         "album":"1989"
     },
     {
-        "quote":"",
-        "song":"",
+        "quote":"They'll take their shots, but we are bulletproof.",
+        "song":"I know places",
         "album":"1989"
     },
     {
-        "quote":"",
-        "song":"",
+        "quote":"So I punched a hole in the roof / Let the flood carry away all my pictures of you.",
+        "song":"Clean",
         "album":"1989"
     },
     {
@@ -446,7 +476,7 @@
     },
     {
         "quote":"You call me up again just to break me like a promise / So casually cruel in the name of being honest / I'm a crumpled up piece of paper lying here, cause I remember it all, all, all too well",
-        "song":"red",
+        "song":"All Too Well",
         "album": "red"
     },
     {
@@ -470,9 +500,14 @@
         "album": "folklore"
     },
     {
+        "quote":"I was walking home on broken cobblestones just thinking of you, when she pulled up like a figment of my worst intentions",
+        "song":"betty",
+        "album": "folklore"
+    },
+    {
         "quote":"You play stupid games, you win stupid prizes",
         "song":"Miss Americana and the Heartbreak Prince",
-        "album": "folklore"
+        "album": "Lover"
     },
     {
         "quote":"I had a marvelous time ruining everything",
@@ -548,9 +583,430 @@
         "quote":"But she wears short skirts / I wear T-shirts / She's cheer captain / And I'm on the bleachers",
         "song":"You Belong With Me",
         "album": "Fearless"
+    },
+    {
+        "quote": "I don't like that falling feels like flying till the bone crush.",
+        "song": "gold rush",
+        "album": "evermore"
+    },
+    {
+        "quote": "I'm doing good, I'm on some new shit / Been saying \"yes\" instead of \"no\" / I thought I saw you at the bus stop, I didn't though",
+        "song": "the 1",
+        "album": "folklore"
+    },
+    {
+        "quote": "I guess you never know, never know / And if you wanted me, you really should've showed",
+        "song": "the 1",
+        "album": "folklore"
+    },
+    {
+        "quote": "I persist and resist the temptation to ask you / If one thing had been different / Would everything be different today?",
+        "song": "the 1",
+        "album": "folklore"
+    },
+    {
+        "quote": "When you are young they assume you know nothing",
+        "song": "cardigan",
+        "album": "folklore"
+    },
+    {
+        "quote": "You drew stars around my scars / But now I'm bleedin'",
+        "song": "cardigan",
+        "album": "folklore"
+    },
+    {
+        "quote": "I knew you'd miss me once the thrill expired / And you'd be standin' in my front porch light / And I knew you'd come back to me",
+        "song": "cardigan",
+        "album": "folklore"
+    },
+    {
+        "quote": "You wear the same jewels that I gave you, as you bury me",
+        "song": "my tears ricochet",
+        "album": "folklore"
+    },
+    {
+        "quote": "We gather stones, never knowing what they'll mean / Some to throw, some to make a diamond ring",
+        "song": "my tears ricochet",
+        "album": "folklore"
+    },
+    {
+        "quote": "You know I didn't want to have to haunt you / But what a ghostly scene",
+        "song": "my tears ricochet",
+        "album": "folklore"
+    },
+    {
+        "quote": "Do you remember when I pulled up and said 'get in the car' / And then cancelled my plans just in case you called",
+        "song": "august",
+        "album": "folklore"
+    },
+    {
+        "quote": "To live for the hope of it all / Cancel plans just in case you'd call / And say, \"Meet me behind the mall\"",
+        "song": "august",
+        "album": "folklore"
+    },
+    {
+        "quote": "Bold was the waitress on our three-year trip / Getting lunch down by the Lakes / She said I looked like an American singer",
+        "song": "invisible string",
+        "album": "folklore"
+    },
+    {
+        "quote": "Time, mystical time / Cutting me open, then healing me fine / Were there clues I didn't see?",
+        "song": "invisible string",
+        "album": "folklore"
+    },
+    {
+        "quote": "One single thread of gold tied me to you",
+        "song": "invisible string",
+        "album": "folklore"
+    },
+    {
+        "quote": "I know where it all where wrong, your favorite song was playing from the far side of the gym / I was nowhere to be found I hate the crowds / Plus I saw you dance with him",
+        "song": "betty",
+        "album": "folklore"
+    },
+    {
+        "quote": "Knew I was a robber first time that he saw me / Stealing hearts and running off and never sayin' sorry",
+        "song": "...Ready for it?",
+        "album": "reputation"
+    },
+    {
+        "quote": "I swear I don't love the drama, it loves me",
+        "song": "End Game",
+        "album": "reputation"
+    },
+    {
+        "quote": "I bury hatchets, but I keep maps of where I put 'em",
+        "song": "End Game",
+        "album": "reputation"
+    },
+    {
+        "quote": "Love made me crazy, ff it doesn't, you ain't doin' it right",
+        "song": "Don't blame me",
+        "album": "reputation"
+    },
+    {
+        "quote": "My name is whatever you decide / And I'm just gonna call you mine",
+        "song": "Don't blame me",
+        "album": "reputation"
+    },
+    {
+        "quote": "Handsome, you're a mansion with a view",
+        "song": "Delicate",
+        "album": "reputation"
+    },
+    {
+        "quote": "Sometimes I wonder when you sleep / Are you ever dreaming of me?",
+        "song": "Delicate",
+        "album": "reputation"
+    },
+    {
+        "quote": "The world goes on another day, another drama / But not for me, all I think about is karma.",
+        "song": "Look what you made me do",
+        "album": "reputation"
+    },
+    {
+        "quote": "I've got a list of names and yours is in red, underlined / I check it once, then I check it twice",
+        "song": "Look what you made me do",
+        "album": "reputation"
+    },
+    {
+        "quote": "You asked me for a place to sleep, locked me out and threw a feast",
+        "song": "Look what you made me do",
+        "album": "reputation"
+    },
+    {
+        "quote": "You know I'm not a bad girl, but I / Do bad things with you",
+        "song": "So it goes...",
+        "album": "reputation"
+    },
+    {
+        "quote": "You did a number on me but, honestly, baby, who's counting?",
+        "song": "So it goes...",
+        "album": "reputation"
+    },
+    {
+        "quote": "Ocean blue eyes looking in mine / I feel like I might sink and drown and die",
+        "song": "Gorgeous",
+        "album": "reputation"
+    },
+    {
+        "quote": "You make me so happy it turns back to sad / There's nothing I hate more than what I can't have / And you are so gorgeous it makes me so mad",
+        "song": "Gorgeous",
+        "album": "reputation"
+    },
+    {
+        "quote": "We were jet-set, Bonnie and Clyde / Until I switched to the other side / It's no surprise I turned you in / 'Cause us traitors never win",
+        "song": "Gateway Car",
+        "album": "reputation"
+    },
+    {
+        "quote": "We met a few weeks ago / Now you try on callin' me \"Baby\" like tryin' on clothes",
+        "song": "King of my heart",
+        "album": "reputation"
+    },
+    {
+        "quote": "Your love is a secret I'm hoping, dreaming, dying to keep",
+        "song": "King of my heart",
+        "album": "reputation"
+    },
+    {
+        "quote": "Is this the end of all the endings? / My broken bones are mending",
+        "song": "King of my heart",
+        "album": "reputation"
+    },
+    {
+        "quote": "I loved you in spite of deep fears that the world would divide us",
+        "song": "Dancing with our hands tied",
+        "album": "reputation"
+    },
+    {
+        "quote": "Say that we got it / I'm a mess, but I'm the mess that you wanted",
+        "song": "Dancing with our hands tied",
+        "album": "reputation"
+    },
+    {
+        "quote": "But you stabbed me in the back while shaking my hand / And therein lies the issue / Friends don't try to trick you / Get you on the phone and mind-twist you / So I took an axe to a mended fence",
+        "song": "This Is Why We Can't Have Nice Things",
+        "album": "reputation"
+    },
+    {
+        "quote": "I brought a knife to a gunfight",
+        "song": "Call It What You Want",
+        "album": "reputation"
+    },
+    {
+        "quote": "He built a fire just to keep me warm",
+        "song": "Call It What You Want",
+        "album": "reputation"
+    },
+    {
+        "quote": "I want to wear his initial on a chain round my neck, not because he owns me, but cause he really knows me, which is more than they can say",
+        "song": "Call It What You Want",
+        "album": "reputation"
+    },
+    {
+        "quote": "Holding my breath, slowly, I said \"You don't need to save me, but would you run away with me?\"",
+        "song": "Call It What You Want",
+        "album": "reputation"
+    },
+    {
+        "quote": "Would've been right there, front row even if nobody came to your show",
+        "song": "I forgot that you existed",
+        "album": "Lover"
+    },
+    {
+        "quote": "I'm always waiting for you to be waiting below",
+        "song": "Cruel Summer",
+        "album": "Lover"
+    },
+    {
+        "quote": "Devils roll the dice, angels roll their eyes / What doesn't kill me makes me want you more",
+        "song": "Cruel Summer",
+        "album": "Lover"
+    },
+    {
+        "quote": "I don't wanna keep secrets just to keep you",
+        "song": "Cruel Summer",
+        "album": "Lover"
+    },
+    {
+        "quote": "I'm drunk in the back of the car / And I cried like a baby coming home from the bar (Oh) / Said, \"I'm fine,\" but it wasn't true",
+        "song": "Cruel Summer",
+        "album": "Lover"
+    },
+    {
+        "quote": "For whatever it's worth, I love you, ain't that the worst thing you ever heard?",
+        "song": "Cruel Summer",
+        "album": "Lover"
+    },
+    {
+        "quote": "I've got a hundred thrown-out speeches I almost said to you",
+        "song": "The Archer",
+        "album": "Lover"
+    },
+    {
+        "quote": "I am an architect, I'm drawing up the plans",
+        "song": "I think he knows",
+        "album": "Lover"
+    },
+    {
+        "quote": "I'll never let you go 'cause I know this is a fight that someday we're gonna win",
+        "song": "Mrs Americana and The Heartbreak Prince",
+        "album": "Lover"
+    },
+    {
+        "quote": "I'm with you even if it makes me blue",
+        "song": "Paper Rings",
+        "album": "Lover"
+    },
+    {
+        "quote": "Without all the exes, fights, and flaws, we wouldn't be standing here so tall",
+        "song": "Paper Rings",
+        "album": "Lover"
+    },
+    {
+        "quote": "We were a fresh page on the desk, filling in the blanks as we go",
+        "song": "Cornelia Street",
+        "album": "Lover"
+    },
+    {
+        "quote": "We were in the backseat drunk on something stronger than the drinks in the bar",
+        "song": "Cornelia Street",
+        "album": "Lover"
+    },
+    {
+        "quote": "If the story is over, why am I still writing pages?",
+        "song": "Death by a thousand cuts",
+        "album": "Lover"
+    },
+    {
+        "quote": "I ask the traffic lights if it will be alright, they say I don't know.",
+        "song": "Death by a thousand cuts",
+        "album": "Lover"
+    },
+    {
+        "quote": "They say home is where the heart is, but that's not where mine lives",
+        "song": "London Boy",
+        "album": "Lover"
+    },
+    {
+        "quote": "I pinned your hands behind your back / Thought I had reason to attack, but no",
+        "song": "Afterglow",
+        "album": "Lover"
+    },
+    {
+        "quote": "Fighting with a true love is boxing with no gloves / Chemistry 'til it blows up, 'til there’s no us",
+        "song": "Afterglow",
+        "album": "Lover"
+    },
+    {
+        "quote": "And I can't talk to you when you're like this, staring out the window like I’m not your favorite town",
+        "song": "False God",
+        "album": "Lover"
+    },
+    {
+        "quote": "They say the road gets hard and you get lost",
+        "song": "False God",
+        "album": "Lover"
+    },
+    {
+        "quote": "Remember how I said I'd die for you?",
+        "song": "False God",
+        "album": "Lover"
+    },
+    {
+        "quote": "I come back stronger than a '90s trend",
+        "song": "willow",
+        "album": "evermore"
+    },
+    {
+        "quote": "Wait for the signal, and I'll meet you after dark / Show me the places where the others gave you scars",
+        "song": "willow",
+        "album": "evermore"
+    },
+    {
+        "quote": "Bustling crowds or silent sleepers / You're not sure which is worse",
+        "song": "champagne problems",
+        "album": "evermore"
+    },
+    {
+        "quote": "You told your family for a reason / You couldn't keep it in / Your sister splashed out on the bottle",
+        "song": "champagne problems",
+        "album": "evermore"
+    },
+    {
+        "quote": "\"This dorm was once a madhouse\" I made a joke, \"Well, it's made for me\"",
+        "song": "champagne problems",
+        "album": "evermore"
+    },
+    {
+        "quote": "One for the money, two for the show / I never was ready so I watch you go",
+        "song": "champagne problems",
+        "album": "evermore"
+    },
+    {
+        "quote": "Sometimes you just don't know the answer 'til someone's on their knees and asks you",
+        "song": "champagne problems",
+        "album": "evermore"
+    },
+    {
+        "quote": "And then it fades into the gray of my day-old tea 'Cause it could never be",
+        "song": "gold rush",
+        "album": "evermore"
+    },
+    {
+        "quote": "I can't dare to dream about you anymore",
+        "song": "gold rush",
+        "album": "evermore"
+    },
+    {
+        "quote": "My mind turns your life into folklore / I can't dare to dream about you anymore",
+        "song": "gold rush",
+        "album": "evermore"
+    },
+    {
+        "quote": "I parked my car right between the Methodist and thе school that used to be ours",
+        "song": "'tis the damn season",
+        "album": "evermore"
+    },
+    {
+        "quote": "I'll go back to L.A. and the so-called friends who'll write books about me if I ever make it and wonder about the only soul who can tell which smiles I'm fakin'",
+        "song": "'tis the damn season",
+        "album": "evermore"
+    },
+    {
+        "quote": "What would you do if I break free and leave us in ruins, took this dagger in me and removed it, gain the weight of you then loose it?",
+        "song": "tolerate it",
+        "album": "evermore"
+    },
+    {
+        "quote": "I made you my temple, my mural, my sky. Now I'm begging for footnotes in the story of your life / Drawing hearts in the byline always taking up too much space or time",
+        "song": "tolerate it",
+        "album": "evermore"
+    },
+    {
+        "quote": "Your nemesis will defeat themselves before you get the chance to swing",
+        "song": "long story short",
+        "album": "evermore"
+    },
+    {
+        "quote": "My waves meet your shore ever and evermore",
+        "song": "long story short",
+        "album": "evermore"
+    },
+    {
+        "quote": "I replay my footsteps on each stepping stone, trying to find the one where I went wrong",
+        "song": "evermore",
+        "album": "evermore"
+    },
+    {
+        "quote": "So yeah, it's a fire, it's a goddamn blaze in the dark and you've started it / So yeah, it's a war, it's the goddamn fight of my life and you started it",
+        "song": "ivy",
+        "album": "evermore"
+    },
+    {
+        "quote": "Did you ever hear about the girl who got frozen? / Time went on for everybody else, she won't know it / She's still twenty-three inside her fantasy",
+        "song": "right where you left me",
+        "album": "evermore"
+    },
+    {
+        "quote": "Breaking down and coming undone / It's a rollercoaster kind of rush",
+        "song": "The Way I Loved You",
+        "album": "fearless"
+    },
+    {
+        "quote": "He can't see the smile I'm faking and my heart's not breaking 'cause I'm not feeling anything at all",
+        "song": "The Way I Loved You",
+        "album": "fearless"
+    },
+    {
+        "quote": "Well, I like the way your hair falls in your face / You got the keys to me / I love each freckle on your face, oh",
+        "song": "Jump Then Fall",
+        "album": "fearless"
+    },
+    {
+        "quote": "With your face and the beautiful eyes / And the conversation with the little white lies / And the faded picture of a beautiful night",
+        "song": "The other side of the door",
+        "album": "fearless"
     }
-
-
-    
-    
 ]
