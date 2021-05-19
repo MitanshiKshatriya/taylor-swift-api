@@ -5,13 +5,13 @@ I couldn't believe that one of the best songwriters doesn't have a random lyrics
 ![](taylor.gif)
 
 ## Usage
-* To Get Random Taylor Swift lyrics : Send Get Request to : https://taylorswiftapi.herokuapp.com/get
+* To Get Random Taylor Swift lyrics : https://taylorswiftapi.herokuapp.com/get
 * To Get Random Taylor Swift lyrics from a specific album or song :
-  * From an album : https://taylorswiftapi.herokuapp.com/get?album=&lt;album&gt;
-  * From a song : https://taylorswiftapi.herokuapp.com/get?song=&lt;song&gt;
+  * From an album : ```https://taylorswiftapi.herokuapp.com/get?album=<album>```
+  * From a song : ```https://taylorswiftapi.herokuapp.com/get?song=<song>```
 * To Get All Taylor Swift lyrics from a specific album or song :
-  * From an album : https://taylorswiftapi.herokuapp.com/get-all?song=&lt;song&gt;
-  * From a song : https://taylorswiftapi.herokuapp.com/get-all?album=&lt;album&gt;
+  * From an album : ```https://taylorswiftapi.herokuapp.com/get-all?song=<song>```
+  * From a song : ```https://taylorswiftapi.herokuapp.com/get-all?album=<album>```
 
 ## Contribution
 
