@@ -17,9 +17,9 @@ I couldn't believe that one of the best songwriters doesn't have a random lyrics
 
 * Contribute your favourite taylor lyrics / quotes
   * Add the lyrics / quotes to `taylorquotes.db`
-  * If adding a quote keep the album and song as none
+  * While adding a quote, keep album and song fields as none
   * make a pull request
-  * no repition
+  * no repetitions
 
 * adding endpoints / making other suggestions
     * Raise an issue wait to be assigned to it
