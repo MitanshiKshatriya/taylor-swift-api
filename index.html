@@ -95,11 +95,12 @@
 					<li>
 						GET RANDOM LYRICS:
 						<a
-							href="https://taylorswiftapi.herokuapp.com/get"
+							href="javascript:void(0)"
+							onclick="window.open(`${window.location.href}get`)"
 							target="_blank"
 							rel="noopener"
 							rel="noreferrer"
-							>https://taylorswiftapi.herokuapp.com/get</a
+							><span class="current-url"></span>get</a
 						>
 					</li>
 					QUERY PARAMETERS:
@@ -107,15 +108,17 @@
 						<li>
 							GET RANDOM LYRICS FROM AN ALBUM:
 							<a
-								href="https://taylorswiftapi.herokuapp.com/get?album=evermore"
-								>https://taylorswiftapi.herokuapp.com/get?album=&lt;album&gt;</a
+								href="javascript:void(0)"
+								onclick="window.open(`${window.location.href}get?album=evermore`)"
+								><span class="current-url"></span>get?album=&lt;album&gt;</a
 							>
 						</li>
 						<li>
 							GET RANDOM LYRICS FROM A SONG:
 							<a
-								href="https://taylorswiftapi.herokuapp.com/get?song=lover"
-								>https://taylorswiftapi.herokuapp.com/get?song=&lt;song&gt;</a
+								href="javascript:void(0)"
+								onclick="window.open(`${window.location.href}get?song=lover`)"
+								><span class="current-url"></span>get?song=&lt;song&gt;</a
 							>
 						</li>
 					</ul>
@@ -125,14 +128,16 @@
 						<ul>
 							<li>
 								FILTER BY SONG: <a
-									href="https://taylorswiftapi.herokuapp.com/get-all?song=lover"
-									>https://taylorswiftapi.herokuapp.com/get-all?song=&lt;song&gt;</a
+									href="javascript:void(0)"
+									onclick="window.open(`${window.location.href}get-all?song=lover`)"
+									><span class="current-url"></span>get-all?song=&lt;song&gt;</a
 								>
 							</li>
 							<li>
 								FILTER BY ALBUM: <a
-									href="https://taylorswiftapi.herokuapp.com/get-all?album=reputation"
-									>https://taylorswiftapi.herokuapp.com/get-all?album=&lt;album&gt;</a
+									href="javascript:void(0)"
+									onclick="window.open(`${window.location.href}get-all?album=reputation`)"
+									><span class="current-url"></span>get-all?album=&lt;album&gt;</a
 								>
 							</li>
 						</ul>
@@ -172,10 +177,15 @@
 			</div>
 		</div>
 		<script>
+
+			// rendering the current url in span elements
+			var currentUrl = window.location.href;
+			$("span.current-url").html(currentUrl);
+			
 			function getQuotesJson() {
 				$.ajax({
 					method: "GET",
-					url: "https://taylorswiftapi.herokuapp.com/get",
+					url: `${location.href}get`,
 					dataType: "json",
 					success: onSuccess,
 					error: onError,
