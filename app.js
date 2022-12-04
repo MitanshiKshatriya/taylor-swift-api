@@ -1,47 +1,88 @@
-function getQuotesJson(){
-  $.ajax({
-    method:'GET',
-    url:"https://protected-plains-05402.herokuapp.com/get",
-    dataType:'json',
-    success: onSuccess,
-    error: onError
-  })
+const express = require("express");
+const path = require("path");
+const app = express();
+app.use(express.static("views"));
 
-  }
+var fs = require("fs");
 
+String.prototype.toTitleCase = function () {
+	return this.replace(/\w\S*/g, (w) =>
+		w.replace(/^\w/, (c) => c.toUpperCase())
+	);
+};
 
-function onSuccess(jsonReturn){
-  console.log("success")
-  quoteData=jsonReturn
-
-// {"quote":"Cold was the steel of my axe to grind for the boys who broke my heart /
-//  Now I send their babies presents",
-//  "song":"Invisible String",
-//  "album":"folklore"}
-
-
-  var newquote=quoteData.quote;
-  var song=quoteData.song;
-  var album=quoteData.album;
-  $("#lyrics").html(newquote);
-  $("#song").html("- "+song+", "); 
-  $("#album").html(album)
-  
-  
-  $("#tweet-quote").attr("href", "http://www.twitter.com/intent/tweet?text="+newquote+" -"+song+", "+album);
-
-
-}
-function onError(jsonReturn){
-  console.log("error")
-}
-$('#new-quote').on('click',function(){
-  getQuotesJson();
+// index
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-  
-$('document').ready(function(){
+// get random lyrics
+app.get("/get", (req, res) => {
+	fs.readFile("taylorquotes.db", function (err, buf) {
+		res.setHeader("Access-Control-Allow-Origin", "*");
+		res.setHeader(
+			"Access-Control-Allow-Methods",
+			"GET, POST, OPTIONS, PUT, PATCH, DELETE"
+		);
+		res.setHeader(
+			"Access-Control-Allow-Headers",
+			"X-Requested-With,content-type"
+		);
+		var qarr = JSON.parse(buf);
+		if (Object.entries(req.query).length === 0) {
+			var random = Math.floor(Math.random() * (qarr.length - 1));
+			res.send(qarr[random]);
+		} else {
+			if (req.query.album) {
+				qarr = qarr.filter(
+					(lyrics) => lyrics.album == req.query.album.toTitleCase()
+				);
+			}
+			if (req.query.song) {
+				qarr = qarr.filter((lyrics) => lyrics.song == req.query.song.toTitleCase());
+			}
+			var random = Math.floor(Math.random() * (qarr.length - 1));
+			res.send(qarr[random]);
+		}
+	});
+});
 
-    getQuotesJson()
-    
-})
+// get all lyrics that match with the filters
+app.get("/get-all", (req, res) => {
+	fs.readFile("taylorquotes.db", function (err, buf) {
+		res.setHeader("Access-Control-Allow-Origin", "*");
+		res.setHeader(
+			"Access-Control-Allow-Methods",
+			"GET, POST, OPTIONS, PUT, PATCH, DELETE"
+		);
+		res.setHeader(
+			"Access-Control-Allow-Headers",
+			"X-Requested-With,content-type"
+		);
+		var qarr = JSON.parse(buf);
+		if (!(Object.entries(req.query).length === 0)) {
+			if (req.query.album) {
+				qarr = qarr.filter(
+					(lyrics) => lyrics.album == req.query.album.toTitleCase()
+				);
+			}
+			if (req.query.song) {
+				qarr = qarr.filter((lyrics) => lyrics.song == req.query.song.toTitleCase());
+			}
+		}
+		res.send(qarr);
+	});
+});
+
+//implement api to get a random quote from an album
+
+//Httpserver Port Number 3000.
+app.listen(process.env.PORT || 3000, function () {
+	console.log(
+		"Express server listening on port %d in %s mode",
+		this.address().port,
+		app.settings.env
+	);
+});
+
+app.set("view engine", "ejs");
