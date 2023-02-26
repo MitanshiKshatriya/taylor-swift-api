@@ -1,88 +1,89 @@
 const express = require("express");
-const path = require("path");
 const app = express();
+const path = require("path");
+const { allQuotes } = require("./taylorquotes");
 app.use(express.static("views"));
 
-var fs = require("fs");
-
 String.prototype.toTitleCase = function () {
-	return this.replace(/\w\S*/g, (w) =>
-		w.replace(/^\w/, (c) => c.toUpperCase())
-	);
+  return this.replace(/\w\S*/g, (w) =>
+    w.replace(/^\w/, (c) => c.toUpperCase())
+  );
 };
 
 // index
 app.get("/", (req, res) => {
-	res.sendFile(path.join(__dirname + "/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 // get random lyrics
 app.get("/get", (req, res) => {
-	fs.readFile("taylorquotes.db", function (err, buf) {
-		res.setHeader("Access-Control-Allow-Origin", "*");
-		res.setHeader(
-			"Access-Control-Allow-Methods",
-			"GET, POST, OPTIONS, PUT, PATCH, DELETE"
-		);
-		res.setHeader(
-			"Access-Control-Allow-Headers",
-			"X-Requested-With,content-type"
-		);
-		var qarr = JSON.parse(buf);
-		if (Object.entries(req.query).length === 0) {
-			var random = Math.floor(Math.random() * (qarr.length - 1));
-			res.send(qarr[random]);
-		} else {
-			if (req.query.album) {
-				qarr = qarr.filter(
-					(lyrics) => lyrics.album == req.query.album.toTitleCase()
-				);
-			}
-			if (req.query.song) {
-				qarr = qarr.filter((lyrics) => lyrics.song == req.query.song.toTitleCase());
-			}
-			var random = Math.floor(Math.random() * (qarr.length - 1));
-			res.send(qarr[random]);
-		}
-	});
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+
+  if (req.query?.song) {
+    const filteredQuotes = allQuotes.filter(
+      (lyrics) => lyrics.song === req.query.song.toTitleCase()
+    );
+    res.send(getRandomElementFrom(filteredQuotes));
+    return;
+  }
+
+  if (req.query?.album) {
+    const filteredQuotes = allQuotes.filter(
+      (lyrics) => lyrics.album === req.query.album.toTitleCase()
+    );
+    res.send(getRandomElementFrom(filteredQuotes));
+    return;
+  }
+
+  res.send(getRandomElementFrom(allQuotes));
 });
 
 // get all lyrics that match with the filters
 app.get("/get-all", (req, res) => {
-	fs.readFile("taylorquotes.db", function (err, buf) {
-		res.setHeader("Access-Control-Allow-Origin", "*");
-		res.setHeader(
-			"Access-Control-Allow-Methods",
-			"GET, POST, OPTIONS, PUT, PATCH, DELETE"
-		);
-		res.setHeader(
-			"Access-Control-Allow-Headers",
-			"X-Requested-With,content-type"
-		);
-		var qarr = JSON.parse(buf);
-		if (!(Object.entries(req.query).length === 0)) {
-			if (req.query.album) {
-				qarr = qarr.filter(
-					(lyrics) => lyrics.album == req.query.album.toTitleCase()
-				);
-			}
-			if (req.query.song) {
-				qarr = qarr.filter((lyrics) => lyrics.song == req.query.song.toTitleCase());
-			}
-		}
-		res.send(qarr);
-	});
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+
+  if (req.query?.song) {
+    res.send(
+      allQuotes.filter((lyrics) => lyrics.song === req.query.song.toTitleCase())
+    );
+    return;
+  }
+
+  if (req.query?.album) {
+    res.send(
+      allQuotes.filter(
+        (lyrics) => lyrics.album === req.query.album.toTitleCase()
+      )
+    );
+    return;
+  }
+
+  res.send(allQuotes);
 });
 
 //implement api to get a random quote from an album
 
 //Httpserver Port Number 3000.
 app.listen(process.env.PORT || 3000, function () {
-	console.log(
-		"Express server listening on port %d in %s mode",
-		this.address().port,
-		app.settings.env
-	);
+  console.log(
+    `Express server listening on port ${this.address().port} in ${
+      app.settings.env
+    } mode`
+  );
 });
-
-app.set("view engine", "ejs");
