@@ -10,6 +10,10 @@ String.prototype.toTitleCase = function () {
   );
 };
 
+function getRandomElementFrom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
 // index
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
