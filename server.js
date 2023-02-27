@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = 3000;
 const path = require("path");
 const { allQuotes } = require("./taylorquotes");
 app.use(express.static("views"));
@@ -14,6 +15,36 @@ function getRandomElementFrom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
+function setHeaderInformation(res) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+}
+
+// Filter allQuotes by the request parameters (if any)
+function getFilteredQuotes(req) {
+  if (req.query?.song) {
+    return allQuotes.filter(
+      (lyrics) => lyrics.song === req.query.song.toTitleCase()
+    );
+  }
+
+  if (req.query?.album) {
+    return allQuotes.filter(
+      (lyrics) => lyrics.album === req.query.album.toTitleCase()
+    );
+  }
+
+  // No request parameters (filters), so use default value of allQuotes
+  return allQuotes;
+}
+
 // index
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
@@ -21,70 +52,17 @@ app.get("/", (req, res) => {
 
 // get random lyrics
 app.get("/get", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-Requested-With,content-type"
-  );
-
-  if (req.query?.song) {
-    const filteredQuotes = allQuotes.filter(
-      (lyrics) => lyrics.song === req.query.song.toTitleCase()
-    );
-    res.send(getRandomElementFrom(filteredQuotes));
-    return;
-  }
-
-  if (req.query?.album) {
-    const filteredQuotes = allQuotes.filter(
-      (lyrics) => lyrics.album === req.query.album.toTitleCase()
-    );
-    res.send(getRandomElementFrom(filteredQuotes));
-    return;
-  }
-
-  res.send(getRandomElementFrom(allQuotes));
+  setHeaderInformation(res);
+  res.send(getRandomElementFrom(getFilteredQuotes(req)));
 });
 
 // get all lyrics that match with the filters
 app.get("/get-all", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-Requested-With,content-type"
-  );
-
-  if (req.query?.song) {
-    res.send(
-      allQuotes.filter((lyrics) => lyrics.song === req.query.song.toTitleCase())
-    );
-    return;
-  }
-
-  if (req.query?.album) {
-    res.send(
-      allQuotes.filter(
-        (lyrics) => lyrics.album === req.query.album.toTitleCase()
-      )
-    );
-    return;
-  }
-
-  res.send(allQuotes);
+  setHeaderInformation(res);
+  res.send(getFilteredQuotes(req));
 });
 
-//implement api to get a random quote from an album
-
-//Httpserver Port Number 3000.
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || port, function () {
   console.log(
     `Express server listening on port ${this.address().port} in ${
       app.settings.env
