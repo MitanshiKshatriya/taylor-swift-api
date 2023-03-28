@@ -288,8 +288,8 @@ const allQuotes = [
   },
   {
     quote: "Photo album on the counter / Your cheeks were turning red / You used to be a little kid in glasses in a twin-sized bed",
-    song: All Too Well,
-    album: Red,
+    song: "All Too Well",
+    album: "Red",
   },
   {
     quote:
