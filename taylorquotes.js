@@ -287,7 +287,8 @@ const allQuotes = [
     album: "Red",
   },
   {
-    quote: "Photo album on the counter / Your cheeks were turning red / You used to be a little kid in glasses in a twin-sized bed",
+    quote:
+      "Photo album on the counter / Your cheeks were turning red / You used to be a little kid in glasses in a twin-sized bed",
     song: "All Too Well",
     album: "Red",
   },
@@ -1362,8 +1363,112 @@ const allQuotes = [
   },
   {
     quote: "They say that if it's right, you know",
-    song: "Hits Differents",
+    song: "Hits Different",
     album: "Midnights",
+  },
+  {
+    quote:
+      "You look like Taylor Swift In this light, we're loving it / You've got edge she never did. / The future's bright, dazzling.",
+    song: "Clara Bow",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Now I'm down bad, cryin' at the gym, everything comes out teenage petulance.",
+    song: "Down Bad",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Little did you know, your home's really only a town you're just a guest in.",
+    song: "Florida!!!",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote: "And I love you, it's ruining my life.",
+    song: "Fortnight",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote: "Lights, camera, bitch smile, even when you wanna die.",
+    song: "I Can Do It With A Broken Heart",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "I cry a lot but I am so productive, it's an art / You know you're good when you can even do it with a broken heart.",
+    song: "I Can Do It With A Broken Heart",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Whether I'm gonna be your wife or gonna smash up your bike / I haven't decided yet / But I'm gonna get you back.",
+    song: "Imgonnagetyouback",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "We broke all the pieces but still want to play the game / Told my friends I hate you but I love you just the same.",
+    song: "Imgonnagetyouback",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote: "I'm an Aston Martin / That you steered straight into the ditch.",
+    song: "Imgonnagetyouback",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "You said you were gonna grow up / Then you were gonna come find me.",
+    song: "Peter",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Truth, dare, spin bottles / You know how to ball, I know Aristotle / Brand new, full-throttle / Touch me while your bros play Grand Theft Auto.",
+    song: "So High School",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "I stopped CPR, after all it's no use / The spirit was gone, we would never come to.",
+    song: "So Long, London",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "You swore that you loved me but where were the clues? / I died on the altar waiting for the proof.",
+    song: "So Long, London",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "I wrote a thousand songs that you find uncool / I built a legacy that you can't undo.",
+    song: "ThanK You AIMee",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "And one day, your kid comes home singing / A song that only us two is gonna know is about you 'cause.",
+    song: "ThanK You AIMee",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Please, I've been on my knees / Change the prophecy / Don't want money / Just someone who wants my company.",
+    song: "The Prophecy",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote:
+      "Hand on the throttle / Thought I caught lightning in a bottle / Oh, but it's gone again.",
+    song: "The Prophecy",
+    album: "The Tortured Poets Department",
+  },
+  {
+    quote: "You wouldn't last an hour in the asylum where they raised me.",
+    song: "Who's Afraid Of Little Old Me?",
+    album: "The Tortured Poets Department",
   },
 ];
 
