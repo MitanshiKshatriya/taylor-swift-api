@@ -1470,6 +1470,71 @@ const allQuotes = [
     song: "Who's Afraid Of Little Old Me?",
     album: "The Tortured Poets Department",
   },
+  {
+    quote: "And if you'd never come for me / I might've drowned in the melancholy",
+    song: "The Fate of Ophelia",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "All that time / I sat alone in my tower / You were just honing your powers / Now I can see it all (See it all)",
+    song: "The Fate of Ophelia",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "Keep it one hundred on the land (Land), thе sea (Sea), the sky / Pledge allegiance to your hands, your team, your vibes",
+    song: "The Fate of Ophelia",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "Sleepless in the onyx night / But now, the sky is opalite, oh-oh, oh, oh, oh",
+    song: "Opalite",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "You had to make your own sunshine / But now, thе sky is opalite, oh-oh, oh, oh, oh, oh",
+    song: "Opalite",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "I'll be your father figure, I drink that brown liquor / I can make deals with the devil because my dick's bigger",
+    song: "Father Figure",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "We lie back / A beautiful, beautiful time-lapse / Ferris wheels, kisses, and lilacs",
+    song: "Eldest Daughter",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "Don't make it awkward in second period / Might piss your ex off, lately, we've been good / Staying friends is safe, doesn't mean you should",
+    song: "Ruin the Friendship",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "I heard you call me 'Boring Barbie' when the coke's got you brave",
+    song: "Actually Romantic",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "It's actually romantic / I really gotta hand it to you, ooh / No man has ever loved me like you do",
+    song: "Actually Romantic",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "You think I'm tacky, baby / Stop talking dirty to me / It sounded nasty, but it feels like you're flirting with me",
+    song: "Actually Romantic",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "But you touched my face / Redefined all of those blues when you say 'honey'",
+    song: "Honey",
+    album: "The Life of a Showgirl",
+  },
+  {
+    quote: "Hеy, thank you for the lovely bouquet / You're sweeter than a peach / But you don't know the life of a showgirl, babe / And you're never ever gonna",
+    song: "The Life of a Showgirl",
+    album: "The Life of a Showgirl",
+  },
 ];
 
 module.exports = {
